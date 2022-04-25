@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(179,179,179,.6);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.section p{
+    color: #7e7d7d;
+    font-size: .9rem;
+}
+.section h4{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.first-box{
+    position: relative;
+    height: 170px;
+    padding-top: 1rem;
+}
+.bubble{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 140px;
+    height: 140px;
+    background: #ff88c0;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: .2;
+}
+.bubble-two{
+    top: 120px;
+    left: 315px;
+    width: 50px;
+    height: 50px;
+}
+.bubble-tr{
+    top: 340px;
+    left: 280px;
+    width: 90px;
+    height: 90px;
+}
+.bubble-fr{
+    top: 360px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+}
+.profile-pic{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    border-radius: 25%;
+}
+.profile-pic::after,
+.profile-pic::before{
+    content: "";
+    position: absolute;
+}
+.profile-pic::before{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/profile.png) center / cover;
+    border-radius: 25%;
+    transform: scale(.9);
+}
+.profile-pic::after{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 75px;
+    height: 75px;
+    background: linear-gradient(135deg, #ff6ec7 0%, #7bc1ff 100%);
+    z-index: -1;
+    border-radius: 20px;
+}
+.second-box{
+    height: 190px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 1.1rem;
+}
+.about-header{
+    width: 100%;
+}
+.links{
+    width: 220px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.links a{
+    color: #bfbfbf;
+    padding: .4rem .9rem;
+    transition: .5s;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+.links a:hover{
+    color: #ff6db3;
+    border-color: #ff82dc5d;
+    border-radius: 20px;
+}
+.contact{
+    width: 90px;
+    height: 25px;
+    border: none;
+    color: #6a6a6a;
+    background: #a7d6ff7b;
+    border-radius: 15px;
+    font-size: .7rem;
+    transition: .6s;
+}
+.contact:hover{
+    background: #ffd6fe80;
+    border-radius: 10px;
+}
+.copy{
+    font-size: .5rem;
+    text-align: center;
+    color: #cacaca;
+}
+span{
+    color: #ff2b8e;
+    font-size: 1.1rem;
+}
